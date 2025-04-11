@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Same head content as main page -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - MrrahimDev</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet>
+  <style>
+    /* Include all previous styles */
+    .privacy-container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 4rem 2rem;
+      background: #fff;
+    }
+
+    .privacy-header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .privacy-header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .privacy-section {
+      margin-bottom: 2.5rem;
+    }
+
+    .privacy-section h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: #222;
+    }
+
+    .privacy-section p,
+    .privacy-section ul {
+      margin-bottom: 1.5rem;
+      color: #444;
+    }
+
+    .privacy-section ul {
+      padding-left: 2rem;
+    }
+
+    .privacy-section li {
+      margin-bottom: 0.5rem;
+    }
+
+    .highlight {
+      color: #007bff;
+      font-weight: 600;
+    }
+
+    a[href^="mailto"] {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    @media (max-width: 768px) {
+      .privacy-container {
+        padding: 2rem 1rem;
+      }
+      
+      .privacy-header h1 {
+        font-size: 2rem;
+      }
+      
+      .privacy-section h3 {
+        font-size: 1.3rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <!-- Same header as main page -->
+    <div class="header-left">
+      <button class="menu-toggle" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <strong>MrrahimDev</strong>
+    </div>
+    <nav id="mobile-menu">
+      <a href="/">Home</a>
+      <a href="/privacy">Privacy</a>
+      <a href="#">Terms</a>
+      <a href="#">Contact</a>
+    </nav>
+    <div class="header-right">
+      <button class="btn">Get Started</button>
+    </div>
+  </header>
+
+  <div class="privacy-container">
+    <div class="privacy-header">
+      <h1>Privacy Policy</h1>
+      <p>Effective Date: <span class="highlight">25/03/2025</span></p>
+    </div>
+
+    <div class="privacy-section">
+      <h3>1. Information We Collect</h3>
+      <p>We collect the following types of information:</p>
+      <ul>
+        <li>
+          <strong>Personal Information:</strong>
+          <ul>
+            <li>Your name</li>
+            <li>Email address</li>
+            <li>Password</li>
+            <li><em>We do not collect any other personal information beyond what you explicitly provide.</em></li>
+          </ul>
+        </li>
+        <li>
+          <strong>Usage Data:</strong>
+          <ul>
+            <li>How you interact with the app</li>
+            <li>Time and date of use</li>
+            <li>App features you access</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <div class="privacy-section">
+      <h3>2. How We Use Your Information</h3>
+      <p>We use your information to:</p>
+      <ul>
+        <li>Provide and improve the app's functionality</li>
+        <li>Monitor usage trends and improve performance</li>
+        <li>Send notifications and updates</li>
+        <li>Deliver in-app messages from admins</li>
+        <li>Assist with account recovery</li>
+        <li>Ensure the app's security and stability</li>
+      </ul>
+    </div>
+
+    <!-- Add remaining sections following the same pattern -->
+
+    <div class="privacy-section">
+      <h3>8. Contact Us</h3>
+      <p>If you have questions or concerns about this Privacy Policy:</p>
+      <ul>
+        <li>Email: <a href="mailto:m.r.rahim.mail@gmail.com">m.r.rahim.mail@gmail.com</a></li>
+        <li>Within the app: Use the feedback feature</li>
+      </ul>
+    </div>
+  </div>
+
+  <footer>
+    <!-- Same footer as main page -->
+    <p>&copy; 2025 MrrahimDev. All rights reserved.</p>
+    <div>
+      <a href="/privacy">Privacy Policy</a>
+      <a href="#">Terms</a>
+      <a href="#">Blog</a>
+    </div>
+  </footer>
+
+  <script>
+    // Same JavaScript as main page
+    function toggleMenu() {
+      const nav = document.getElementById('mobile-menu');
+      const toggleBtn = document.querySelector('.menu-toggle');
+      nav.classList.toggle('active');
+      toggleBtn.classList.toggle('active');
+    }
+  </script>
+</body>
+</html>

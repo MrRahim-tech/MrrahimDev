@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MrrahimDev</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="manifest" href="manifest.json">
+</head>
+
+<body>
+  <header>
+    <div class="logo">MrrahimDev</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="#">Services</a>
+      <a href="post.html">Posts</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="menu-icon" onclick="toggleMenu()">
+      <i class="fas fa-bars"></i>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="">Home</a>
+      <a href="about.html">About</a>
+      <a href="Terms.html">Terms</a>
+      <a href="post.html">Posts</a>
+      <a href="privacyPolicy.html">Privacy Policy</a>
+    </div>
+  </header>
+
+  <section class="main">
+    <p>WELCOME TO</p>
+    <h1>Welcome MrrahimDev Website, We are working for you.</h1>
+    <button id="startBtn" class="start-btn">Start Now</button>
+  </section>
+
+  <section id="features" class="features">
+    <div class="feature">
+      <i class="fas fa-gem"></i>
+      <h3>Unique Design</h3>
+      <p>Creative and customized designs for your brand identity.</p>
+    </div>
+    <div class="feature">
+      <i class="fas fa-lightbulb"></i>
+      <h3>Innovation</h3>
+      <p>Modern solutions tailored to your business needs.</p>
+    </div>
+    <div class="feature">
+      <i class="fas fa-chart-line"></i>
+      <h3>Digital Strategy</h3>
+      <p>Building effective strategies to boost your digital presence.</p>
+    </div>
+    <div class="feature">
+      <i class="fas fa-pencil-alt"></i>
+      <h3>Brand Identity</h3>
+      <p>Helping you create a strong and unique brand impression.</p>
+    </div>
+  </section>
+
+  <section class="posts">
+    <div class="post">
+      <h3>Post One Title</h3>
+      <p>This is a sample description of the first post content. You can edit this to include real blog content or news.</p>
+    </div>
+    <div class="post">
+      <h3>Post Two Title</h3>
+      <p>This is another example of a blog post or update from MrrahimDev website.</p>
+    </div>
+    <div class="post">
+      <h3>Post Three Title</h3>
+      <p>Stay updated with our latest articles and tech insights. This is where new info will go.</p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-col">
+      <h4>Page Links</h4>
+      <ul>
+        <li><a href="blogs.html">Posts</a></li>
+        <li><a href="privacyPolicy.html">PrivacyPolicy</a></li>
+        <li><a href="">contact</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="Terms.html">Terms and Conditions</a></li>
+        <li><a href="PrivacyPolicy.html">Privacy Policy</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Website Information</h4>
+      <p><strong>Website Name:</strong> MrrahimDev</p>
+      <p><strong>Address:</strong> Galkaio, Puntland, Somalia</p>
+      <p><strong>Phone:</strong> +252 90 6109389</p>
+    </div>
+  </footer>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 MrrahimDev. All rights reserved.</p>
+  </div>
+
+  <script src="index.js"></script>
+  <script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/service-worker.js')
+      .then(function(reg) {
+        console.log('Service worker registered.', reg);
+      });
+  }
+</script>
+</body>
+
+</html>

@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms of Service - EthicalHackPro</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* Base Styles */
+    :root {
+      --primary: #007bff;
+      --secondary: #6c757d;
+      --danger: #dc3545;
+      --success: #28a745;
+      --light: #f8f9fa;
+      --dark: #212529;
+    }
+
+    /* Include All Previous Header/Footer Styles */
+
+    /* Enhanced Terms Styling */
+    .terms-container {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.05);
+    }
+
+    .terms-header {
+      text-align: center;
+      margin-bottom: 3rem;
+      padding: 2rem;
+      background: var(--light);
+      border-radius: 12px;
+      border: 1px solid rgba(0,0,0,0.05);
+    }
+
+    .section-card {
+      padding: 2rem;
+      margin: 2rem 0;
+      background: #fff;
+      border-left: 4px solid var(--primary);
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.03);
+      transition: all 0.2s ease;
+    }
+
+    .section-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.05);
+    }
+
+    .legal-notice {
+      background: #e3f2fd;
+      padding: 1.5rem;
+      border-radius: 8px;
+      margin: 2rem 0;
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+    }
+
+    .legal-notice svg {
+      width: 24px;
+      height: 24px;
+      flex-shrink: 0;
+    }
+
+    .prohibited-list {
+      padding: 1.5rem;
+      background: #fff5f5;
+      border-radius: 8px;
+      border-left: 4px solid var(--danger);
+      margin: 1.5rem 0;
+    }
+
+    .law-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.5rem 1rem;
+      background: var(--light);
+      border-radius: 8px;
+      font-size: 0.9rem;
+      margin: 0.5rem;
+    }
+
+    .interactive-toc {
+      position: sticky;
+      top: 100px;
+      align-self: start;
+      padding: 1.5rem;
+      background: var(--light);
+      border-radius: 8px;
+    }
+
+    .toc-link {
+      display: block;
+      padding: 0.5rem;
+      color: var(--secondary);
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+
+    .toc-link:hover {
+      color: var(--primary);
+      transform: translateX(5px);
+    }
+
+    /* Enhanced Back to Top */
+    .back-to-top {
+      background: var(--primary);
+      padding: 1rem;
+      border-radius: 50%;
+      box-shadow: 0 6px 12px rgba(0,123,255,0.25);
+      transition: all 0.3s ease;
+    }
+
+    .back-to-top:hover {
+      transform: scale(1.1);
+      box-shadow: 0 8px 16px rgba(0,123,255,0.3);
+    }
+
+    @media (max-width: 768px) {
+      .terms-container {
+        padding: 1rem;
+        margin: 1rem;
+      }
+      
+      .section-card {
+        padding: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-left">
+      <button class="menu-toggle" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <strong>EthicalHackPro</strong>
+    </div>
+    <nav id="mobile-menu">
+      <a href="/">Home</a>
+      <a href="/privacy">Privacy</a>
+      <a href="/terms" class="active">Terms</a>
+      <a href="#">Contact</a>
+    </nav>
+    <div class="header-right">
+      <button class="btn">Get Started</button>
+    </div>
+  </header>
+
+  <main class="terms-container">
+    <div class="terms-header">
+      <h1>Terms of Service</h1>
+      <div class="highlight-bar"></div>
+      <p class="text-secondary">Last Updated: March 25, 2025</p>
+      
+      <div class="legal-notice">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z" />
+        </svg>
+        <div>
+          <strong>Legal Notice:</strong> The Somali language version prevails in case of discrepancies. 
+          This English translation is provided for convenience only.
+        </div>
+      </div>
+    </div>
+
+    <aside class="interactive-toc">
+      <h4>Table of Contents</h4>
+      <nav>
+        <a href="#introduction" class="toc-link">1. Introduction</a>
+        <a href="#usage" class="toc-link">2. Usage Terms</a>
+        <a href="#data" class="toc-link">3. Data Collection</a>
+        <!-- Add remaining TOC items -->
+      </nav>
+    </aside>
+
+    <article>
+      <section class="section-card" id="introduction">
+        <h2>1. Introduction</h2>
+        <div class="highlight-bar"></div>
+        <p>EthicalHackPro is an educational platform focused on ethical hacking. By using our services, you agree to:</p>
+        <ul class="styled-list">
+          <li>Comply with all terms and conditions</li>
+          <li>Use the platform solely for educational</li><!-- Continue within <article> tag after existing sections -->
+
+<!-- Section 4: Third-Party Services -->
+<section class="section-card" id="third-party">
+  <h2>4. Third-Party Services</h2>
+  <div class="highlight-bar"></div>
+  <div class="service-grid">
+    <div class="service-card">
+      <img src="firebase-logo.svg" alt="Google Firebase" class="service-logo">
+      <div class="service-info">
+        <h4>Google Firebase</h4>
+        <p>User authentication and data storage</p>
+        <a href="https://firebase.google.com" target="_blank" class="text-link">
+          View Privacy Policy ↗
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Section 5: Premium Service -->
+<section class="section-card" id="premium">
+  <h2>5. Premium Service</h2>
+  <div class="highlight-bar"></div>
+  <div class="pricing-card">
+    <div class="pricing-header">
+      <span class="badge">Ad-Free Experience</span>
+      <h3 class="price">$9.99<span>/month</span></h3>
+    </div>
+    <ul class="perks-list">
+      <li><span class="check-icon">✓</span> Zero advertisements</li>
+      <li><span class="check-icon">✓</span> Priority support</li>
+      <li><span class="check-icon">✓</span> Exclusive content</li>
+    </ul>
+    <div class="payment-flow">
+      <div class="step">
+        <div class="step-icon">1</div>
+        <p>Contact admin at<br><a href="mailto:mr.rahim.mail@gmail.com">mr.rahim.mail@gmail.com</a></p>
+      </div>
+      <div class="step">
+        <div class="step-icon">2</div>
+        <p>Receive payment instructions</p>
+      </div>
+      <div class="step">
+        <div class="step-icon">3</div>
+        <p>Instant activation</p>
+      </div>
+    </div>
+    <div class="refund-notice">
+      <svg class="warning-icon">⚠️</svg>
+      <p>All sales are final - no refunds</p>
+    </div>
+  </div>
+</section>
+
+<!-- Section 6: Data Retention -->
+<section class="section-card" id="data-retention">
+  <h2>6. Data Retention</h2>
+  <div class="highlight-bar"></div>
+  <div class="timeline">
+    <div class="timeline-item">
+      <div class="timeline-marker"></div>
+      <div class="timeline-content">
+        <h4>Account Deletion Request</h4>
+        <p>Immediate removal from active systems</p>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-marker"></div>
+      <div class="timeline-content">
+        <h4>30-Day Grace Period</h4>
+        <p>Data remains in encrypted backups</p>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-marker"></div>
+      <div class="timeline-content">
+        <h4>Permanent Erasure</h4>
+        <p>Complete removal from all systems</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Section 7: Intellectual Property -->
+<section class="section-card" id="ip-rights">
+  <h2>7. Intellectual Property</h2>
+  <div class="highlight-bar"></div>
+  <div class="ip-notice">
+    <svg class="shield-icon">🛡️</svg>
+    <div>
+      <h4>Protected Content Includes:</h4>
+      <ul class="ip-list">
+        <li>Course materials</li>
+        <li>UI/UX designs</li>
+        <li>Proprietary algorithms</li>
+      </ul>
+    </div>
+  </div>
+  <div class="license-options">
+    <p>For usage permissions:</p>
+    <button class="btn-outline">Request Commercial License</button>
+  </div>
+</section>
+
+<!-- Section 8: Advertising -->
+<section class="section-card" id="advertising">
+  <h2>8. Advertising</h2>
+  <div class="highlight-bar"></div>
+  <div class="ad-partners">
+    <img src="admob-logo.svg" alt="Google AdMob" class="ad-logo">
+    <div class="ad-info">
+      <h4>Ad Serving Technology</h4>
+      <p>Personalized ads based on usage patterns</p>
+      <a href="#privacy" class="text-link">See Privacy Policy for details</a>
+    </div>
+  </div>
+</section>
+
+<!-- Section 9: Liability -->
+<section class="section-card" id="liability">
+  <h2>9. Limitation of Liability</h2>
+  <div class="highlight-bar"></div>
+  <div class="disclaimer">
+    <div class="exclusion-grid">
+      <div class="exclusion-card">
+        <h4>✗ Technical Failures</h4>
+        <p>Server outages, data corruption</p>
+      </div>
+      <div class="exclusion-card">
+        <h4>✗ Security Breaches</h4>
+        <p>Third-party attacks</p>
+      </div>
+      <div class="exclusion-card">
+        <h4>✗ User Misconduct</h4>
+        <p>Policy violations</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Continue with remaining sections following similar patterns -->
+
+<style>
+  /* Enhanced CSS Components */
+  .service-grid {
+    display: grid;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+  }
+
+  .service-card {
+    display: flex;
+    align-items: center;
+    padding: 1.5rem;
+    background: var(--light);
+    border-radius: 12px;
+    transition: transform 0.2s;
+  }
+
+  .service-card:hover {
+    transform: translateY(-3px);
+  }
+
+  .service-logo {
+    width: 60px;
+    height: 60px;
+    margin-right: 1.5rem;
+  }
+
+  .pricing-card {
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+    border: 1px solid rgba(0,0,0,0.05);
+    border-radius: 16px;
+    padding: 2rem;
+    margin: 1.5rem 0;
+  }
+
+  .payment-flow {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0;
+    gap: 1rem;
+  }
+
+  .step {
+    flex: 1;
+    text-align: center;
+    padding: 1rem;
+    background: rgba(0,123,255,0.05);
+    border-radius: 8px;
+  }
+
+  .step-icon {
+    width: 35px;
+    height: 35px;
+    background: var(--primary);
+    color: white;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+  }
+
+  .timeline {
+    position: relative;
+    padding-left: 30px;
+    margin: 2rem 0;
+  }
+
+  .timeline-marker {
+    position: absolute;
+    left: -8px;
+    top: 5px;
+    width: 16px;
+    height: 16px;
+    background: var(--primary);
+    border-radius: 50%;
+    border: 3px solid white;
+  }
+
+  .ip-notice {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    background: #fff3e0;
+    border-radius: 12px;
+    margin: 1.5rem 0;
+  }
+
+  .shield-icon {
+    font-size: 2rem;
+    flex-shrink: 0;
+  }
+
+  .ad-partners {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 1.5rem;
+    background: var(--light);
+    border-radius: 12px;
+  }
+
+  .exclusion-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+  }
+
+  .exclusion-card {
+    padding: 1.5rem;
+    background: #fff5f5;
+    border-radius: 8px;
+    text-align: center;
+  }
+
+  @media (max-width: 768px) {
+    .payment-flow {
+      flex-direction: column;
+    }
+    
+    .ad-partners {
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    .service-card {
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    .service-logo {
+      margin: 0 0 1rem 0;
+    }
+  }
+</style>
+
+<script>
+  // Enhanced Intersection Observer
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      const id = entry.target.getAttribute('id');
+      const tocLink = document.querySelector(`.toc-link[href="#${id}"]`);
+      
+      if (entry.isIntersecting) {
+        tocLink.classList.add('active');
+        history.replaceState(null, null, `#${id}`);
+      } else {
+        tocLink.classList.remove('active');
+      }
+    });
+  }, { threshold: 0.5 });
+
+  // Initialize observer for all sections
+  document.querySelectorAll('section').forEach(section => {
+    observer.observe(section);
+  });
+
+  // Dynamic Copyright Year
+  document.querySelector('footer p').innerHTML = `&copy; ${new Date().getFullYear()} EthicalHackPro. All rights reserved.`;
+</script>
