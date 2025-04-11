@@ -77,10 +77,7 @@ nav a {
   z-index: 1;
 }
 
-header .logo, 
-.mobile-menu
-.fas fa-bars
-nav .menu-icon,
+header,
 .main h1,
 .main .start-btn {
   z-index: 2;

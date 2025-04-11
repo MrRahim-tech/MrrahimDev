@@ -1,82 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Same head content as main page -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Privacy Policy - MrrahimDev</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
-    /* Include all previous styles */
-    .privacy-container {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 4rem 2rem;
+    /* CSS-kii Hore */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      line-height: 1.6;
       background: #fff;
+      color: #222;
+      overflow-x: hidden;
+    }
+    header {
+      position: sticky;
+      top: 0;
+      background: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+      z-index: 100;
+    }
+    .header-left {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    .header-right {
+      display: none;
+    }
+    nav {
+      position: fixed;
+      top: 0;
+      right: -100%;
+      height: 100vh;
+      width: 80%;
+      max-width: 300px;
+      background: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 2rem 1.5rem;
+      box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+      transition: right 0.3s ease-in-out;
+      z-index: 101;
+    }
+    nav.active {
+      right: 0;
+    }
+    nav a {
+      margin-bottom: 1rem;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #007bff;
+    }
+    .btn {
+      padding: 0.6rem 1.2rem;
+      border: none;
+      border-radius: 6px;
+      background: #007bff;
+      color: white;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .btn:hover {
+      background: #0056b3;
+    }
+    footer {
+      background: #f0f0f0;
+      padding: 1.5rem 2rem;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+    footer a {
+      margin: 0 0.5rem;
+      color: #333;
+      text-decoration: none;
+    }
+    .menu-toggle {
+      position: relative;
+      width: 25px;
+      height: 20px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      z-index: 102;
+    }
+    .menu-toggle span {
+      display: block;
+      height: 3px;
+      background: #333;
+      border-radius: 2px;
+      transition: all 0.3s ease;
+      transform-origin: center;
+    }
+    .menu-toggle.active span:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px);
+    }
+    .menu-toggle.active span:nth-child(2) {
+      opacity: 0;
+    }
+    .menu-toggle.active span:nth-child(3) {
+      transform: rotate(-45deg) translate(5px, -5px);
     }
 
+    /* CSS-kii Cusub */
+    .privacy-container {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    }
     .privacy-header {
       text-align: center;
       margin-bottom: 3rem;
+      padding: 2rem;
+      background: #f8f9fa;
+      border-radius: 12px;
     }
-
     .privacy-header h1 {
       font-size: 2.5rem;
-      margin-bottom: 1rem;
-    }
-
-    .privacy-section {
-      margin-bottom: 2.5rem;
-    }
-
-    .privacy-section h3 {
-      font-size: 1.5rem;
-      margin-bottom: 1rem;
-      color: #222;
-    }
-
-    .privacy-section p,
-    .privacy-section ul {
-      margin-bottom: 1.5rem;
-      color: #444;
-    }
-
-    .privacy-section ul {
-      padding-left: 2rem;
-    }
-
-    .privacy-section li {
+      color: #007bff;
       margin-bottom: 0.5rem;
+      animation: fadeInUp 0.6s ease;
     }
-
-    .highlight {
-      color: #007bff;
-      font-weight: 600;
+    .section-card {
+      padding: 2rem;
+      margin: 1.5rem 0;
+      background: #fff;
+      border-left: 4px solid #007bff;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease;
     }
-
-    a[href^="mailto"] {
-      color: #007bff;
-      text-decoration: none;
+    .section-card:hover {
+      transform: translateY(-3px);
     }
-
+    .highlight-bar {
+      width: 50px;
+      height: 4px;
+      background: #007bff;
+      margin: 1rem 0;
+      border-radius: 2px;
+    }
+    .back-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #007bff;
+      color: white;
+      padding: 12px 16px;
+      border-radius: 50%;
+      cursor: pointer;
+      opacity: 0;
+      transition: opacity 0.3s;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      font-size: 1.2rem;
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @media (min-width: 768px) {
+      nav {
+        position: static;
+        height: auto;
+        width: auto;
+        flex-direction: row;
+        background: none;
+        box-shadow: none;
+        padding: 0;
+        right: 0 !important;
+        max-width: none;
+        align-items: center;
+      }
+      nav a { margin: 0 1rem; }
+      .header-right { display: block; }
+      .menu-toggle { display: none; }
+    }
     @media (max-width: 768px) {
-      .privacy-container {
-        padding: 2rem 1rem;
-      }
-      
-      .privacy-header h1 {
-        font-size: 2rem;
-      }
-      
-      .privacy-section h3 {
-        font-size: 1.3rem;
-      }
+      .privacy-container { padding: 1rem; }
+      .section-card { padding: 1.5rem; }
+      .menu-toggle span { height: 2.5px; }
     }
   </style>
 </head>
 <body>
+  <!-- Header-ka Asalka ah -->
   <header>
-    <!-- Same header as main page -->
     <div class="header-left">
       <button class="menu-toggle" onclick="toggleMenu()">
         <span></span>
@@ -87,27 +217,29 @@
     </div>
     <nav id="mobile-menu">
       <a href="/">Home</a>
-      <a href="/privacy">Privacy</a>
-      <a href="#">Terms</a>
-      <a href="#">Contact</a>
+      <a href="/privacy">Privacy Policy</a>
+      <a href="Terms.html">Terms</a>
+      <a href="about.html">About us</a>
     </nav>
     <div class="header-right">
       <button class="btn">Get Started</button>
     </div>
   </header>
 
+  <!-- Privacy Content -->
   <div class="privacy-container">
     <div class="privacy-header">
       <h1>Privacy Policy</h1>
-      <p>Effective Date: <span class="highlight">25/03/2025</span></p>
+      <div class="highlight-bar"></div>
+      <p>Effective Date: <strong>25/03/2025</strong></p>
     </div>
 
-    <div class="privacy-section">
+    <div class="section-card" id="section1">
       <h3>1. Information We Collect</h3>
+      <div class="highlight-bar"></div>
       <p>We collect the following types of information:</p>
       <ul>
-        <li>
-          <strong>Personal Information:</strong>
+        <li><strong>Personal Information:</strong>
           <ul>
             <li>Your name</li>
             <li>Email address</li>
@@ -115,8 +247,7 @@
             <li><em>We do not collect any other personal information beyond what you explicitly provide.</em></li>
           </ul>
         </li>
-        <li>
-          <strong>Usage Data:</strong>
+        <li><strong>Usage Data:</strong>
           <ul>
             <li>How you interact with the app</li>
             <li>Time and date of use</li>
@@ -126,9 +257,9 @@
       </ul>
     </div>
 
-    <div class="privacy-section">
+    <div class="section-card" id="section2">
       <h3>2. How We Use Your Information</h3>
-      <p>We use your information to:</p>
+      <div class="highlight-bar"></div>
       <ul>
         <li>Provide and improve the app's functionality</li>
         <li>Monitor usage trends and improve performance</li>
@@ -139,36 +270,106 @@
       </ul>
     </div>
 
-    <!-- Add remaining sections following the same pattern -->
-
-    <div class="privacy-section">
-      <h3>8. Contact Us</h3>
-      <p>If you have questions or concerns about this Privacy Policy:</p>
+    <div class="section-card" id="section3">
+      <h3>3. Sharing Your Information</h3>
+      <div class="highlight-bar"></div>
+      <p>We only share your information with third parties in:</p>
       <ul>
-        <li>Email: <a href="mailto:m.r.rahim.mail@gmail.com">m.r.rahim.mail@gmail.com</a></li>
-        <li>Within the app: Use the feedback feature</li>
+        <li><strong>Google Sheets:</strong> For secure data storage</li>
       </ul>
     </div>
+
+    <div class="section-card" id="section4">
+      <h3>4. Data Protection</h3>
+      <div class="highlight-bar"></div>
+      <ul>
+        <li>Encryption during transmission</li>
+        <li>Restricted access to authorized personnel</li>
+        <li>Regular security audits</li>
+      </ul>
+    </div>
+
+    <div class="section-card" id="section5">
+      <h3>5. Your Rights</h3>
+      <div class="highlight-bar"></div>
+      <ul>
+        <li>Access your personal data</li>
+        <li>Request data deletion</li>
+        <li>Opt-out of marketing communications</li>
+      </ul>
+    </div>
+
+    <div class="section-card" id="section6">
+      <h3>6. Children's Privacy</h3>
+      <div class="highlight-bar"></div>
+      <p>We do not knowingly collect information from children under 15 without parental consent.</p>
+    </div>
+
+    <div class="section-card" id="section7">
+      <h3>7. Policy Changes</h3>
+      <div class="highlight-bar"></div>
+      <p>Updates will be notified through:</p>
+      <ul>
+        <li>In-app notifications</li>
+        <li>Updated effective date at the top</li>
+      </ul>
+    </div>
+
+    <div class="section-card" id="section8">
+      <h3>8. Contact Us</h3>
+      <div class="highlight-bar"></div>
+      <p>Reach us via:</p>
+      <ul>
+        <li>Email: <a href="mailto:m.r.rahim.mail@gmail.com">m.r.rahim.mail@gmail.com</a></li>
+        <li>In-app feedback feature</li>
+      </ul>
+    </div>
+
+    <div class="back-to-top" id="backToTop" onclick="scrollToTop()">↑</div>
   </div>
 
+  <!-- Footer-ka Asalka ah -->
   <footer>
-    <!-- Same footer as main page -->
     <p>&copy; 2025 MrrahimDev. All rights reserved.</p>
     <div>
       <a href="/privacy">Privacy Policy</a>
-      <a href="#">Terms</a>
-      <a href="#">Blog</a>
+      <a href="Terms.html">Terms of Service</a>
+      <a href="about.html">About Us</a>
     </div>
   </footer>
 
   <script>
-    // Same JavaScript as main page
+    // JavaScript-kii Hore
     function toggleMenu() {
       const nav = document.getElementById('mobile-menu');
       const toggleBtn = document.querySelector('.menu-toggle');
       nav.classList.toggle('active');
       toggleBtn.classList.toggle('active');
     }
+
+    // JavaScript Cusub
+    // Back to Top
+    const backToTop = document.getElementById('backToTop');
+    window.addEventListener('scroll', () => {
+      backToTop.style.opacity = window.scrollY > 300 ? '1' : '0';
+    });
+
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    // Auto-Close Mobile Menu
+    document.querySelectorAll('nav a').forEach(link => {
+      link.addEventListener('click', toggleMenu);
+    });
+
+    // Section Highlight
+    window.addEventListener('scroll', () => {
+      document.querySelectorAll('.section-card').forEach(card => {
+        const rect = card.getBoundingClientRect();
+        card.style.borderColor = rect.top < 150 ? '#007bff' : '#e9ecef';
+      });
+    });
   </script>
 </body>
 </html>
